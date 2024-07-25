@@ -6,24 +6,43 @@ function Body() {
       <div className="content">
           <ul className='content_list'>
             <li className='content_list_note'>
-                <input type= "checkbox"></input>   
+              <div className='content_note'>
+                <input className='content_note-checkbox' type= "checkbox"></input>   
+                <span className='content_note-text'>
                 NOTE #1 
-                <p>edit</p>
-                <p>delete</p>
+                </span>
+              </div>
+              <div className='content_handle'>
+              <p className='content_handle-icon'>edit</p>
+              <p className='content_handle-icon'>delete</p>
+              </div>
             </li>
             <li className='content_list_note'>
-                <input type= "checkbox"></input>   
-                NOTE #2
-                <p>edit</p>
-                <p>delete</p>
-            </li> <li className='content_list_note'>
-                <input type= "checkbox"></input>   
-                NOTE #
-                <p>edit</p>
-                <p>delete</p>
+              <div className='content_note'>
+                <input className='content_note-checkbox' type= "checkbox"></input>   
+                <span className='content_note-text content_note-text--delete'>
+                NOTE #2 
+                </span>
+              </div>
+              <div className='content_handle'>
+                <p className='content_handle-icon'>edit</p>
+                <p className='content_handle-icon'>delete</p>
+              </div>
+            </li>
+            <li className='content_list_note'>
+              <div className='content_note'>
+                <input className='content_note-checkbox' type= "checkbox"></input>   
+                <span className='content_note-text'>
+                NOTE #3 
+                </span>
+              </div>
+              <div className='content_handle'>
+              <p className='content_handle-icon'>edit</p>
+              <p className='content_handle-icon'>delete</p>
+              </div>
             </li>
           </ul>
-          <button>ADD</button>
+          <button className='content_add'>+</button>
       </div>
   
     );
