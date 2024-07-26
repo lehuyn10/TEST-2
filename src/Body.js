@@ -13,8 +13,8 @@ function Body() {
                 </span>
               </div>
               <div className='content_handle'>
-              <p className='content_handle-icon'>edit</p>
-              <p className='content_handle-icon'>delete</p>
+              <p className='content_handle-icon content_handle-icon--edit'>edit</p>
+              <p className='content_handle-icon content_handle-icon--delete'>delete</p>
               </div>
             </li>
             <li className='content_list_note'>
@@ -25,8 +25,8 @@ function Body() {
                 </span>
               </div>
               <div className='content_handle'>
-                <p className='content_handle-icon'>edit</p>
-                <p className='content_handle-icon'>delete</p>
+                <p className='content_handle-icon content_handle-icon--edit'>edit</p>
+                <p className='content_handle-icon content_handle-icon--delete'>delete</p>
               </div>
             </li>
             <li className='content_list_note'>
@@ -37,12 +37,24 @@ function Body() {
                 </span>
               </div>
               <div className='content_handle'>
-              <p className='content_handle-icon'>edit</p>
-              <p className='content_handle-icon'>delete</p>
+              <p className='content_handle-icon content_handle-icon--edit'>edit</p>
+              <p className='content_handle-icon content_handle-icon--delete'>delete</p>
               </div>
             </li>
           </ul>
-          <button className='content_add'>+</button>
+          <button className='content_add color-hover'>
+            +
+          <div className='page_add_note'>
+              <h1 className='header_title'>NEW NOTE</h1>
+              <div className='content_input'>
+               <input  nput className='content_input-add' placeholder='Input your note...'></input>
+              </div>
+              <div className='footer'>
+                <button className='footer_btn footer_btn-cancel'>CANCEL</button>
+                <button className='footer_btn footer_btn-apply color-hover'>APPLY</button>
+              </div>
+            </div>
+          </button>
       </div>
   
     );

@@ -10,11 +10,16 @@ function App() {
           <div className='header_search-bar'>
              <input className='header_search-bar-input' placeholder='Search note...'></input>
              <i></i>
-             <div className='header_select'>
-              ALL
-              <i></i>
+             <div className='header_select color-hover'>
+              All
+              <i className='header_select-icon'>v</i>
+              <div className='header_select-list'>
+                <p className='header_select-list-items'>All</p>
+                <p className='header_select-list-items'>Complete</p>
+                <p className='header_select-list-items'>Incomplete</p>
               </div>
-              <button className='header_btn-mode'>
+              </div>
+              <button className='header_btn-mode color-hover'>
                 <i></i>
                 Night
               </button>

@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.color-hover:hover {
+    background: #534CC2;
+}
+
 .content_list {
     top: 1000px;
     list-style: none;
@@ -19,15 +23,11 @@
     align-items: center;
     justify-content:space-between;
     border-bottom: 1px solid #6C63FF;
-}
-
-.content_list_note::after {
-    content: '';
-    border-bottom: 1px solid #6C63FF;
+    cursor: pointer;
 }
 
 .content_list_note:last-child {
-
+    border: none;
 }
 
 .content_note {
@@ -71,6 +71,15 @@
     display: none;
 }
 
+.content_handle-icon--edit:hover {
+    color: #6C63FF;
+}
+
+.content_handle-icon--delete:hover {
+    color: #E50000;
+}
+
+
 .content_list_note:hover  .content_handle-icon
  {
     cursor: pointer;
@@ -79,6 +88,7 @@
 
 
 .content_add {
+    position: relative;
     width: 50px;
     height: 50px;
     line-height: 100%; /* 18px */
@@ -97,4 +107,71 @@
     bottom: 4%;
     right: 15%;
     cursor: pointer;
+}
+
+.content_add:hover .page_add_note {
+    display: block;
+}
+
+/* pase add note */
+.page_add_note {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 30px;
+    width: 500px;
+    height: 289px;
+    border: 2px solid #6C63FF;;
+    border-radius: 16px;
+    background: #F7F7F7;
+    box-shadow: -3px 3px #c7c7c7;
+    display: none;
+}
+
+.content_input {
+    display: flex;
+    justify-content: center;
+}
+
+.content_input-add {
+    width: 100%;
+    height: 38px;
+    margin-bottom: 20%;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid  #6C63FF;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_btn {
+    padding: 10px 22px;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid #6C63FF;
+    line-height: 100%; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer_btn-cancel {
+    color: var(--purple, #6C63FF);
+}
+
+.footer_btn-cancel:hover {
+    background-color: #ccc;
+}
+
+.footer_btn-apply {
+    background: #6C63FF;
+    color: #fff;
 }
