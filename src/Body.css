@@ -15,6 +15,7 @@
     top: 1000px;
     list-style: none;
     width: 50%;
+    padding-left: 0;
 }
 
 .content_list_note {
@@ -142,6 +143,14 @@
     align-items: center;
     border-radius: 7px;
     border: 1px solid  #6C63FF;
+    font-size: 16px;
+    outline: none;
+    background-color: #f7f7f7;
+}
+
+.content_input-add::placeholder {
+    color: #C3C1E5;
+    font-size:16px;
 }
 
 .footer {

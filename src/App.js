@@ -8,11 +8,16 @@ function App() {
         <div className='header'>
           <h1 className='header_title'>TODO LIST</h1>
           <div className='header_search-bar'>
-             <input className='header_search-bar-input' placeholder='Search note...'></input>
-             <i></i>
+            <div className='header_search-bar-box'>
+              <input className='header_search-bar-input' placeholder='Search note...'></input>
+              <i class="fa-solid fa-magnifying-glass header_icon-search"></i>
+            </div>
              <div className='header_select color-hover'>
               All
-              <i className='header_select-icon'>v</i>
+              <div className=' header_select-icon'>
+
+              <i class="fa-solid fa-chevron-down"></i>
+              </div>
               <div className='header_select-list'>
                 <p className='header_select-list-items'>All</p>
                 <p className='header_select-list-items'>Complete</p>
@@ -20,8 +25,7 @@ function App() {
               </div>
               </div>
               <button className='header_btn-mode color-hover'>
-                <i></i>
-                Night
+                <i class="fa-regular fa-moon"></i>
               </button>
 
           </div>
